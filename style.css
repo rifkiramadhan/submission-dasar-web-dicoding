@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&family=Montserrat&family=Oswald:wght@500&family=Pacifico&display=swap");
+@import 'css/header.css';
+@import 'css/about.css';
+@import 'css/card-recipes.css';
+@import 'css/card-article.css';
+@import 'css/videos.css';
+@import 'css/galery.css';
+@import 'css/profile.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-main {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-family: "Pacifico", Times, serif;
+}
+
+h2 {
+  margin: 40px auto;
+  text-align: center;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 16px;
+  font-style: italic;
+}
+
+p {
+  font-size: 14px;
+}
+
+table {
+  font-size: 16px;
+}
+
+.judul,
+table,
+p {
+  font-family: "bree serif", Times, serif;
+}
+
+.profile-name,
+p,
+table {
+  color: rgb(235, 230, 230);
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #000000;
+  text-align: center;
+  font-weight: bold;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  #Galery .card-galery {
+    width: 65%;
+    margin-right: 20px;
+  }
+
+  aside .card-profile {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    height: 5vh;
+  }
+
+  #grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #Galery .card-galery {
+    width: 60%;
+  }
+
+  aside .card-profile {
+    width: 350px;
+  }
+
+  img {
+    height: 300px;
+  }
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    height: 10vh;
+  }
+
+  #grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-galery {
+    width: 60%;
+    margin: 30px 10px;
+  }
+
+  aside .card-profile {
+    width: 300px;
+  }
+
+  img {
+    height: 300px;
+  }
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #Galery .card-galery {
+    width: 95%;
+    margin-right: 20px;
+  }
+
+  aside .card-profile {
+    width: 350px;
+    margin-right: 30%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #Galery .card-galery {
+    width: 95%;
+    margin-right: 20px;
+  }
+
+  aside .card-profile {
+    width: 350px;
+    margin-right: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: 5vh;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    transform: translate(-5%, 50%);
+    z-index: 2;
+  }
+
+  .nav-link {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 40%;
+    right: 5%;
+    flex-direction: column;
+    justify-content: space-around;
+    clip-path: circle(0 at 90% -10%);
+    -webkit-clip-path: circle(0 at 90% -10%);
+    transition: all 1s ease-out;
+  }
+
+  .nav-link.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+  }
+
+  .landing {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .logo h4 {
+    margin-top: 15px;
+  }
+
+  article .card-main {
+    margin-right: 20px;
+  }
+
+  #grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #Galery .card-galery,
+  .card-main {
+    width: 100%;
+  }
+
+  aside .card-profile {
+    width: 330px;
+    margin-top: 20px;
+  }
+
+  .mySlides img {
+    height: 250px;
+  }
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    height: 10vh;
+  }
+
+  #grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #Galery .card-galery {
+    width: 95%;
+    margin-right: 20px;
+  }
+
+  aside .card-profile {
+    width: 370px;
+    margin-right: 50px;
+  }
+
+  .mySlides img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  nav {
+    height: 7vh;
+  }
+
+  div.introduce {
+    width: 340px;
+    margin-left: 10;
+  }
+
+  .card-main {
+    width: 95%;
+  }
+
+  #Galery .card-galery {
+    width: 95%;
+  }
+
+  aside .card-profile {
+    width: 350px;
+    margin: 20px 30px;
+  }
+
+  .mySlides img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  nav {
+    height: 7vh;
+  }
+
+  #Galery .card-galery {
+    width: 95%;
+  }
+
+  aside .card-profile {
+    width: 390px;
+    margin: 20px 10px;
+  }
+
+  .mySlides img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  nav {
+    height: 7vh;
+  }
+
+  div.introduce {
+    width: 340px;
+    margin-left: 10px;
+  }
+
+  #Galery .card-galery,
+  .card-main {
+    width: 95%;
+  }
+
+  aside .card-profile {
+    margin: 10px 0;
+  }
+
+  #Galery .card-galery,
+  aside .card-profile {
+    margin-top: 0;
+  }
+
+  .mySlides img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav {
+    height: 10vh;
+  }
+
+  #Galery .card-galery {
+    width: 95%;
+  }
+
+  aside .card-profile {
+    width: 320px;
+    margin-right: 20px;
+  }
+
+  .mySlides img {
+    height: 200px;
+  }
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav {
+    height: 10vh;
+  }
+
+  div.introduce {
+    width: 300px;
+    margin-left: 10px;
+  }
+
+  .card-main {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  #Galery .card-galery {
+    width: 100%;
+  }
+
+  aside .card-profile {
+    width: 320px;
+    margin: 10px 0;
+  }
+
+  .mySlides img {
+    height: 200px;
+  }
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}

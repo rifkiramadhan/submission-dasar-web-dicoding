@@ -1,0 +1,6 @@
+iframe {
+  width: 300px;
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+}

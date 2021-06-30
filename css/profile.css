@@ -1,0 +1,57 @@
+.card-profile {
+  user-select: none;
+  background: #000000;
+  color: #b3b8cd;
+  border-radius: 5px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);
+  float: right;
+  margin: 20px 10px;
+}
+
+.cover-photo {
+  background: url("../assets/img/bg-profile.jpg");
+  height: 160px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.profile {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 93px 0 0 -175px;
+  border: 1px solid #1f1a32;
+  padding: 7px;
+  background: #292343;
+}
+
+.profile-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 20px 120px;
+  font-family: "Pacifico", Times, serif;
+}
+
+table {
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.skils {
+  font-weight: bold;
+}
+
+.card-profile i {
+  padding-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: rgb(165, 161, 161);
+}
+
+.card-profile i:hover {
+  color: #03bfbc;
+}

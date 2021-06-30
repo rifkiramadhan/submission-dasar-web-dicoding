@@ -1,0 +1,44 @@
+.card-recipes {
+  width: 330px;
+  border: 2px solid rgba(230, 224, 224, 0.667);
+  border-radius: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease;
+}
+
+.card-recipes:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.featured-image {
+  width: 100%;
+  height: 150px;
+}
+
+.card-recipes img:hover {
+  transform: scale(1.03);
+}
+
+.card-recipes .details {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+.judul {
+  color: black;
+  font-size: 20px;
+}
+
+.label {
+  font-size: 12px;
+  margin-top: 20px;
+  color: rgb(146, 144, 144);
+}

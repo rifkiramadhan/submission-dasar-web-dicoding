@@ -1,0 +1,115 @@
+.flex-grid {
+  display: flex;
+  justify-content: center;
+}
+
+#grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-articles {
+  display: grid;
+  width: 300px;
+  grid-template-columns: 300px;
+  grid-template-rows: 250px 250px 80px;
+  grid-template-areas: "image""text""stats";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 20px 30px;
+}
+
+.card-image {
+  grid-area: image;
+}
+
+.card-text {
+  grid-area: text;
+}
+
+.card-stats {
+  grid-area: stats;
+}
+
+.card-image,
+.img-one,
+.img-two,
+.img-three {
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+
+.img-one {
+  background-image: url("../assets/img/articles/lambo-vr.jpg");
+}
+
+.img-two {
+  background-image: url("../assets/img/articles/lambo-c.jpg");
+}
+
+.img-three {
+  background-image: url("../assets/img/articles/lambo-cr.jpg");
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text .date {
+  color: #000000;
+  font-size: 13px;
+}
+
+.card-text p {
+  color: grey;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  margin: 10px auto;
+}
+
+.card-stats {
+  grid-area: stats;
+  display: grid;
+  font-size: 14px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.satu {
+  background: #000000;
+}
+
+.dua {
+  background: green;
+}
+
+.tiga {
+  background-color: blue;
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+}
+
+.card-articles:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
